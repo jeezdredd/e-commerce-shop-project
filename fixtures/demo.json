@@ -1,0 +1,2082 @@
+[
+  {
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$MIT4qQvDzLsfHiDLGr4Ehw$HGR9SUCMJDK235GYiuLRd42EYlrO+qlUtmIl8gbjWCM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-06-26T09:20:25.317Z",
+      "email": "ivan@mail.ru",
+      "phone": "89001112233",
+      "full_name": "Иванов Иван Иванович",
+      "avatar": "",
+      "is_deleted": false,
+      "deleted_at": null,
+      "groups": [
+        [
+          "Customer"
+        ]
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$bZj44fBHBUUWvssMs2MCQF$av6vk1l2RbDopRTWa19gMIQ4KaB/iSHeLWxfCLN3hfo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "petr",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-06-26T09:20:25.418Z",
+      "email": "petr@mail.ru",
+      "phone": "89004445566",
+      "full_name": "Петров Пётр Петрович",
+      "avatar": "",
+      "is_deleted": false,
+      "deleted_at": null,
+      "groups": [
+        [
+          "Customer"
+        ]
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$nSljAxClsIXoZq5xfm5MzQ$9OUwEHgUFG7Gt/2CiMTDNidzAYjroVeq9mW1hS1xWrc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anna",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-06-26T09:20:25.503Z",
+      "email": "anna@mail.ru",
+      "phone": "89007778899",
+      "full_name": "Сидорова Анна Сергеевна",
+      "avatar": "",
+      "is_deleted": false,
+      "deleted_at": null,
+      "groups": [
+        [
+          "Customer"
+        ]
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$hlXx38DqQhHNUNlmr4Kdae$+4oJnXNm5vnW/O3ZGp/RdGT9Hq3bpzG0rN5s3LHOdas=",
+      "last_login": "2026-06-28T10:17:16.031Z",
+      "is_superuser": false,
+      "username": "seb0107",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-06-28T10:17:15.828Z",
+      "email": "",
+      "phone": null,
+      "full_name": "",
+      "avatar": "",
+      "is_deleted": false,
+      "deleted_at": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 11,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Электроника",
+      "parent": null,
+      "image": "",
+      "icon": "categories/cat1.svg",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": true
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 12,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Смартфоны",
+      "parent": 11,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 13,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Ноутбуки",
+      "parent": 11,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 14,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Видеокарты",
+      "parent": 11,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 15,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Бытовая техника",
+      "parent": null,
+      "image": "",
+      "icon": "categories/cat2.svg",
+      "is_active": true,
+      "sort_index": 1,
+      "is_favorite": true
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 16,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Холодильники",
+      "parent": 15,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 17,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Стиральные машины",
+      "parent": 15,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 18,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Аксессуары",
+      "parent": null,
+      "image": "",
+      "icon": "categories/cat3.svg",
+      "is_active": true,
+      "sort_index": 2,
+      "is_favorite": true
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 19,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Наушники",
+      "parent": 18,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 20,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "title": "Чехлы",
+      "parent": 18,
+      "image": "",
+      "icon": "",
+      "is_active": true,
+      "sort_index": 0,
+      "is_favorite": false
+    }
+  },
+  {
+    "model": "catalog.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Gaming"
+    }
+  },
+  {
+    "model": "catalog.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Новинка"
+    }
+  },
+  {
+    "model": "catalog.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Хит"
+    }
+  },
+  {
+    "model": "catalog.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Скидка"
+    }
+  },
+  {
+    "model": "catalog.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Премиум"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 22,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 12,
+      "title": "Apple iPhone 15 128GB",
+      "price": "89990.00",
+      "count": 35,
+      "description": "Apple iPhone 15 128GB — официальная гарантия, доставка.",
+      "full_description": "Apple iPhone 15 128GB. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 21,
+      "date": "2026-06-28T10:24:22.724Z",
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 23,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 12,
+      "title": "Samsung Galaxy S24 256GB",
+      "price": "79990.00",
+      "count": 33,
+      "description": "Samsung Galaxy S24 256GB — официальная гарантия, доставка.",
+      "full_description": "Samsung Galaxy S24 256GB. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 236,
+      "date": "2026-06-28T10:24:22.745Z",
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 24,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 12,
+      "title": "Xiaomi 14 512GB",
+      "price": "64990.00",
+      "count": 37,
+      "description": "Xiaomi 14 512GB — официальная гарантия, доставка.",
+      "full_description": "Xiaomi 14 512GB. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 7,
+      "date": "2026-06-28T10:24:22.762Z",
+      "tags": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 25,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 13,
+      "title": "Apple MacBook Air M3 13\"",
+      "price": "119990.00",
+      "count": 9,
+      "description": "Apple MacBook Air M3 13\" — официальная гарантия, доставка.",
+      "full_description": "Apple MacBook Air M3 13\". Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 4,
+      "date": "2026-06-28T10:24:22.779Z",
+      "tags": [
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 26,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 13,
+      "title": "ASUS ZenBook 14 OLED",
+      "price": "84990.00",
+      "count": 5,
+      "description": "ASUS ZenBook 14 OLED — официальная гарантия, доставка.",
+      "full_description": "ASUS ZenBook 14 OLED. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 205,
+      "date": "2026-06-28T10:24:22.794Z",
+      "tags": [
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 27,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 13,
+      "title": "Lenovo ThinkPad E14",
+      "price": "72990.00",
+      "count": 32,
+      "description": "Lenovo ThinkPad E14 — официальная гарантия, доставка.",
+      "full_description": "Lenovo ThinkPad E14. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 24,
+      "date": "2026-06-28T10:24:22.808Z",
+      "tags": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 28,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 14,
+      "title": "NVIDIA GeForce RTX 4090",
+      "price": "159990.00",
+      "count": 10,
+      "description": "NVIDIA GeForce RTX 4090 — официальная гарантия, доставка.",
+      "full_description": "NVIDIA GeForce RTX 4090. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 57,
+      "date": "2026-06-28T10:24:22.824Z",
+      "tags": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 29,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 14,
+      "title": "NVIDIA GeForce RTX 4070",
+      "price": "64990.00",
+      "count": 12,
+      "description": "NVIDIA GeForce RTX 4070 — официальная гарантия, доставка.",
+      "full_description": "NVIDIA GeForce RTX 4070. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 51,
+      "date": "2026-06-28T10:24:22.838Z",
+      "tags": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 30,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 14,
+      "title": "AMD Radeon RX 7900 XTX",
+      "price": "89990.00",
+      "count": 39,
+      "description": "AMD Radeon RX 7900 XTX — официальная гарантия, доставка.",
+      "full_description": "AMD Radeon RX 7900 XTX. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 286,
+      "date": "2026-06-28T10:24:22.853Z",
+      "tags": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 31,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 16,
+      "title": "Bosch KGN39VL24R",
+      "price": "54990.00",
+      "count": 6,
+      "description": "Bosch KGN39VL24R — официальная гарантия, доставка.",
+      "full_description": "Bosch KGN39VL24R. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 160,
+      "date": "2026-06-28T10:24:22.868Z",
+      "tags": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 32,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 16,
+      "title": "Samsung RB37A5000",
+      "price": "49990.00",
+      "count": 36,
+      "description": "Samsung RB37A5000 — официальная гарантия, доставка.",
+      "full_description": "Samsung RB37A5000. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 22,
+      "date": "2026-06-28T10:24:22.878Z",
+      "tags": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 33,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 16,
+      "title": "LG GA-B509CQWL",
+      "price": "47990.00",
+      "count": 20,
+      "description": "LG GA-B509CQWL — официальная гарантия, доставка.",
+      "full_description": "LG GA-B509CQWL. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 163,
+      "date": "2026-06-28T10:24:22.888Z",
+      "tags": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 34,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 17,
+      "title": "Bosch Serie 6 WAT",
+      "price": "42990.00",
+      "count": 35,
+      "description": "Bosch Serie 6 WAT — официальная гарантия, доставка.",
+      "full_description": "Bosch Serie 6 WAT. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 248,
+      "date": "2026-06-28T10:24:22.900Z",
+      "tags": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 35,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 17,
+      "title": "Samsung WW80T",
+      "price": "34990.00",
+      "count": 7,
+      "description": "Samsung WW80T — официальная гарантия, доставка.",
+      "full_description": "Samsung WW80T. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 278,
+      "date": "2026-06-28T10:24:22.909Z",
+      "tags": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 36,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 17,
+      "title": "Indesit BWSA 61051",
+      "price": "24990.00",
+      "count": 11,
+      "description": "Indesit BWSA 61051 — официальная гарантия, доставка.",
+      "full_description": "Indesit BWSA 61051. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": false,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 250,
+      "date": "2026-06-28T10:24:22.918Z",
+      "tags": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 37,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 19,
+      "title": "Sony WH-1000XM5",
+      "price": "32990.00",
+      "count": 14,
+      "description": "Sony WH-1000XM5 — официальная гарантия, доставка.",
+      "full_description": "Sony WH-1000XM5. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": true,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 218,
+      "date": "2026-06-28T10:24:22.932Z",
+      "tags": [
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 38,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 19,
+      "title": "Apple AirPods Pro 2",
+      "price": "24990.00",
+      "count": 28,
+      "description": "Apple AirPods Pro 2 — официальная гарантия, доставка.",
+      "full_description": "Apple AirPods Pro 2. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": false,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 21,
+      "date": "2026-06-28T10:24:22.942Z",
+      "tags": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 39,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 19,
+      "title": "JBL Tune 720BT",
+      "price": "5990.00",
+      "count": 32,
+      "description": "JBL Tune 720BT — официальная гарантия, доставка.",
+      "full_description": "JBL Tune 720BT. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": false,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 210,
+      "date": "2026-06-28T10:24:22.952Z",
+      "tags": [
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 40,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 20,
+      "title": "Чехол Spigen для iPhone 15",
+      "price": "1990.00",
+      "count": 36,
+      "description": "Чехол Spigen для iPhone 15 — официальная гарантия, доставка.",
+      "full_description": "Чехол Spigen для iPhone 15. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": false,
+      "limited_edition": true,
+      "is_banner": true,
+      "sort_index": 0,
+      "purchases_count": 119,
+      "date": "2026-06-28T10:24:22.964Z",
+      "tags": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 41,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 20,
+      "title": "Чехол Samsung Galaxy S24",
+      "price": "1490.00",
+      "count": 25,
+      "description": "Чехол Samsung Galaxy S24 — официальная гарантия, доставка.",
+      "full_description": "Чехол Samsung Galaxy S24. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": false,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 1,
+      "purchases_count": 13,
+      "date": "2026-06-28T10:24:22.973Z",
+      "tags": [
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 42,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "category": 20,
+      "title": "Защитное стекло 2.5D",
+      "price": "590.00",
+      "count": 19,
+      "description": "Защитное стекло 2.5D — официальная гарантия, доставка.",
+      "full_description": "Защитное стекло 2.5D. Подробное описание характеристик и комплектации товара.",
+      "free_delivery": false,
+      "limited_edition": false,
+      "is_banner": false,
+      "sort_index": 2,
+      "purchases_count": 104,
+      "date": "2026-06-28T10:24:22.982Z",
+      "tags": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 22,
+    "fields": {
+      "product": 22,
+      "image": "products/biggoods.png",
+      "alt": "Apple iPhone 15 128GB"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 23,
+    "fields": {
+      "product": 23,
+      "image": "products/biggoods.png",
+      "alt": "Samsung Galaxy S24 256GB"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 24,
+    "fields": {
+      "product": 24,
+      "image": "products/biggoods.png",
+      "alt": "Xiaomi 14 512GB"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 25,
+    "fields": {
+      "product": 25,
+      "image": "products/slider.png",
+      "alt": "Apple MacBook Air M3 13\""
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 26,
+    "fields": {
+      "product": 26,
+      "image": "products/slider.png",
+      "alt": "ASUS ZenBook 14 OLED"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 27,
+    "fields": {
+      "product": 27,
+      "image": "products/slider.png",
+      "alt": "Lenovo ThinkPad E14"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 28,
+    "fields": {
+      "product": 28,
+      "image": "products/videocard.png",
+      "alt": "NVIDIA GeForce RTX 4090"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 29,
+    "fields": {
+      "product": 29,
+      "image": "products/videocard.png",
+      "alt": "NVIDIA GeForce RTX 4070"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 30,
+    "fields": {
+      "product": 30,
+      "image": "products/videocard.png",
+      "alt": "AMD Radeon RX 7900 XTX"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 31,
+    "fields": {
+      "product": 31,
+      "image": "products/product.png",
+      "alt": "Bosch KGN39VL24R"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 32,
+    "fields": {
+      "product": 32,
+      "image": "products/product.png",
+      "alt": "Samsung RB37A5000"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 33,
+    "fields": {
+      "product": 33,
+      "image": "products/product.png",
+      "alt": "LG GA-B509CQWL"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 34,
+    "fields": {
+      "product": 34,
+      "image": "products/product.png",
+      "alt": "Bosch Serie 6 WAT"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 35,
+    "fields": {
+      "product": 35,
+      "image": "products/product.png",
+      "alt": "Samsung WW80T"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 36,
+    "fields": {
+      "product": 36,
+      "image": "products/product.png",
+      "alt": "Indesit BWSA 61051"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 37,
+    "fields": {
+      "product": 37,
+      "image": "products/card.jpg",
+      "alt": "Sony WH-1000XM5"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 38,
+    "fields": {
+      "product": 38,
+      "image": "products/card.jpg",
+      "alt": "Apple AirPods Pro 2"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 39,
+    "fields": {
+      "product": 39,
+      "image": "products/card.jpg",
+      "alt": "JBL Tune 720BT"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 40,
+    "fields": {
+      "product": 40,
+      "image": "products/card.jpg",
+      "alt": "Чехол Spigen для iPhone 15"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 41,
+    "fields": {
+      "product": 41,
+      "image": "products/card.jpg",
+      "alt": "Чехол Samsung Galaxy S24"
+    }
+  },
+  {
+    "model": "catalog.productimage",
+    "pk": 42,
+    "fields": {
+      "product": 42,
+      "image": "products/card.jpg",
+      "alt": "Защитное стекло 2.5D"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 43,
+    "fields": {
+      "product": 22,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 44,
+    "fields": {
+      "product": 22,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 45,
+    "fields": {
+      "product": 23,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 46,
+    "fields": {
+      "product": 23,
+      "name": "Цвет",
+      "value": "Чёрный"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 47,
+    "fields": {
+      "product": 24,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 48,
+    "fields": {
+      "product": 24,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 49,
+    "fields": {
+      "product": 25,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 50,
+    "fields": {
+      "product": 25,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 51,
+    "fields": {
+      "product": 26,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 52,
+    "fields": {
+      "product": 26,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 53,
+    "fields": {
+      "product": 27,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 54,
+    "fields": {
+      "product": 27,
+      "name": "Цвет",
+      "value": "Чёрный"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 55,
+    "fields": {
+      "product": 28,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 56,
+    "fields": {
+      "product": 28,
+      "name": "Цвет",
+      "value": "Чёрный"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 57,
+    "fields": {
+      "product": 29,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 58,
+    "fields": {
+      "product": 29,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 59,
+    "fields": {
+      "product": 30,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 60,
+    "fields": {
+      "product": 30,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 61,
+    "fields": {
+      "product": 31,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 62,
+    "fields": {
+      "product": 31,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 63,
+    "fields": {
+      "product": 32,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 64,
+    "fields": {
+      "product": 32,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 65,
+    "fields": {
+      "product": 33,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 66,
+    "fields": {
+      "product": 33,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 67,
+    "fields": {
+      "product": 34,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 68,
+    "fields": {
+      "product": 34,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 69,
+    "fields": {
+      "product": 35,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 70,
+    "fields": {
+      "product": 35,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 71,
+    "fields": {
+      "product": 36,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 72,
+    "fields": {
+      "product": 36,
+      "name": "Цвет",
+      "value": "Чёрный"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 73,
+    "fields": {
+      "product": 37,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 74,
+    "fields": {
+      "product": 37,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 75,
+    "fields": {
+      "product": 38,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 76,
+    "fields": {
+      "product": 38,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 77,
+    "fields": {
+      "product": 39,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 78,
+    "fields": {
+      "product": 39,
+      "name": "Цвет",
+      "value": "Белый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 79,
+    "fields": {
+      "product": 40,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 80,
+    "fields": {
+      "product": 40,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 81,
+    "fields": {
+      "product": 41,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 82,
+    "fields": {
+      "product": 41,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 83,
+    "fields": {
+      "product": 42,
+      "name": "Гарантия",
+      "value": "12 месяцев"
+    }
+  },
+  {
+    "model": "catalog.specification",
+    "pk": 84,
+    "fields": {
+      "product": 42,
+      "name": "Цвет",
+      "value": "Серый"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 43,
+    "fields": {
+      "product": 22,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.739Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 44,
+    "fields": {
+      "product": 22,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.742Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 45,
+    "fields": {
+      "product": 23,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.757Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 46,
+    "fields": {
+      "product": 23,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.760Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 47,
+    "fields": {
+      "product": 24,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.772Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 48,
+    "fields": {
+      "product": 24,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.773Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 49,
+    "fields": {
+      "product": 25,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.790Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 50,
+    "fields": {
+      "product": 25,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.792Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 51,
+    "fields": {
+      "product": 26,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.804Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 52,
+    "fields": {
+      "product": 26,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.806Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 53,
+    "fields": {
+      "product": 27,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.818Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 54,
+    "fields": {
+      "product": 27,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.819Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 55,
+    "fields": {
+      "product": 28,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.834Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 56,
+    "fields": {
+      "product": 28,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.835Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 57,
+    "fields": {
+      "product": 29,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.848Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 58,
+    "fields": {
+      "product": 29,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.850Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 59,
+    "fields": {
+      "product": 30,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.861Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 60,
+    "fields": {
+      "product": 30,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.862Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 61,
+    "fields": {
+      "product": 31,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.876Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 62,
+    "fields": {
+      "product": 31,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.877Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 63,
+    "fields": {
+      "product": 32,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.885Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 64,
+    "fields": {
+      "product": 32,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.886Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 65,
+    "fields": {
+      "product": 33,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.895Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 66,
+    "fields": {
+      "product": 33,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.896Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 67,
+    "fields": {
+      "product": 34,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.906Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 68,
+    "fields": {
+      "product": 34,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.907Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 69,
+    "fields": {
+      "product": 35,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.916Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 70,
+    "fields": {
+      "product": 35,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.917Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 71,
+    "fields": {
+      "product": 36,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.925Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 72,
+    "fields": {
+      "product": 36,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.926Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 73,
+    "fields": {
+      "product": 37,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.939Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 74,
+    "fields": {
+      "product": 37,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.940Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 75,
+    "fields": {
+      "product": 38,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.949Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 76,
+    "fields": {
+      "product": 38,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.950Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 77,
+    "fields": {
+      "product": 39,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.959Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 78,
+    "fields": {
+      "product": 39,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.960Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 79,
+    "fields": {
+      "product": 40,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.970Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 80,
+    "fields": {
+      "product": 40,
+      "author": "Иванов Иван Иванович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.971Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 81,
+    "fields": {
+      "product": 41,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.979Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 82,
+    "fields": {
+      "product": 41,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.980Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 83,
+    "fields": {
+      "product": 42,
+      "author": "Петров Пётр Петрович",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 5,
+      "date": "2026-06-28T10:24:22.991Z"
+    }
+  },
+  {
+    "model": "catalog.review",
+    "pk": 84,
+    "fields": {
+      "product": 42,
+      "author": "Сидорова Анна Сергеевна",
+      "email": "review@mail.ru",
+      "text": "Отличный товар, соответствует описанию.",
+      "rate": 4,
+      "date": "2026-06-28T10:24:22.992Z"
+    }
+  },
+  {
+    "model": "catalog.sale",
+    "pk": 6,
+    "fields": {
+      "product": 42,
+      "sale_price": "472.00",
+      "date_from": "2026-06-28",
+      "date_to": "2026-07-12"
+    }
+  },
+  {
+    "model": "catalog.sale",
+    "pk": 7,
+    "fields": {
+      "product": 40,
+      "sale_price": "1592.00",
+      "date_from": "2026-06-28",
+      "date_to": "2026-07-12"
+    }
+  },
+  {
+    "model": "catalog.sale",
+    "pk": 8,
+    "fields": {
+      "product": 36,
+      "sale_price": "19992.00",
+      "date_from": "2026-06-28",
+      "date_to": "2026-07-12"
+    }
+  },
+  {
+    "model": "catalog.sale",
+    "pk": 9,
+    "fields": {
+      "product": 41,
+      "sale_price": "1192.00",
+      "date_from": "2026-06-28",
+      "date_to": "2026-07-12"
+    }
+  },
+  {
+    "model": "catalog.sale",
+    "pk": 10,
+    "fields": {
+      "product": 29,
+      "sale_price": "51992.00",
+      "date_from": "2026-06-28",
+      "date_to": "2026-07-12"
+    }
+  },
+  {
+    "model": "catalog.sale",
+    "pk": 11,
+    "fields": {
+      "product": 28,
+      "sale_price": "127992.00",
+      "date_from": "2026-06-28",
+      "date_to": "2026-07-12"
+    }
+  },
+  {
+    "model": "orders.order",
+    "pk": 5,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "user": [
+        "ivan"
+      ],
+      "created_at": "2026-06-28T10:24:23.004Z",
+      "full_name": "Иванов Иван Иванович",
+      "email": "ivan@mail.ru",
+      "phone": "89001112233",
+      "delivery_type": "ordinary",
+      "payment_type": "online",
+      "total_cost": "409940.00",
+      "status": "accepted",
+      "city": "Москва",
+      "address": "Красная площадь, 1",
+      "comment": ""
+    }
+  },
+  {
+    "model": "orders.order",
+    "pk": 6,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "user": [
+        "petr"
+      ],
+      "created_at": "2026-06-28T10:24:23.013Z",
+      "full_name": "Петров Пётр Петрович",
+      "email": "petr@mail.ru",
+      "phone": "89004445566",
+      "delivery_type": "ordinary",
+      "payment_type": "online",
+      "total_cost": "190920.00",
+      "status": "accepted",
+      "city": "Москва",
+      "address": "Красная площадь, 1",
+      "comment": ""
+    }
+  },
+  {
+    "model": "orders.order",
+    "pk": 7,
+    "fields": {
+      "is_deleted": false,
+      "deleted_at": null,
+      "user": [
+        "anna"
+      ],
+      "created_at": "2026-06-28T10:24:23.020Z",
+      "full_name": "Сидорова Анна Сергеевна",
+      "email": "anna@mail.ru",
+      "phone": "89007778899",
+      "delivery_type": "ordinary",
+      "payment_type": "online",
+      "total_cost": "190950.00",
+      "status": "accepted",
+      "city": "Москва",
+      "address": "Красная площадь, 1",
+      "comment": ""
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 11,
+    "fields": {
+      "order": 5,
+      "product": 30,
+      "count": 2,
+      "price": "89990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 12,
+    "fields": {
+      "order": 5,
+      "product": 35,
+      "count": 1,
+      "price": "34990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 13,
+    "fields": {
+      "order": 5,
+      "product": 29,
+      "count": 3,
+      "price": "64990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 14,
+    "fields": {
+      "order": 6,
+      "product": 31,
+      "count": 2,
+      "price": "54990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 15,
+    "fields": {
+      "order": 6,
+      "product": 38,
+      "count": 3,
+      "price": "24990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 16,
+    "fields": {
+      "order": 6,
+      "product": 40,
+      "count": 3,
+      "price": "1990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 17,
+    "fields": {
+      "order": 7,
+      "product": 33,
+      "count": 2,
+      "price": "47990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 18,
+    "fields": {
+      "order": 7,
+      "product": 36,
+      "count": 1,
+      "price": "24990.00"
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 19,
+    "fields": {
+      "order": 7,
+      "product": 35,
+      "count": 2,
+      "price": "34990.00"
+    }
+  }
+]
