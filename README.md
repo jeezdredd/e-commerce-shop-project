@@ -18,8 +18,8 @@ git clone <repo>
 cd e-commerce-shop-project
 cp .env.example .env
 docker compose -f docker/docker-compose.yml --env-file .env up -d --build
-docker compose -f docker/docker-compose.yml exec web uv run python manage.py migrate
-docker compose -f docker/docker-compose.yml exec web uv run python manage.py loaddata fixtures/demo.json
+docker compose -f docker/docker-compose.yml exec web python manage.py migrate
+docker compose -f docker/docker-compose.yml exec web python manage.py loaddata fixtures/demo.json
 ```
 
 ### Переменные `.env`
