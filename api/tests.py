@@ -211,3 +211,73 @@ class ReviewTests(APITestCase):
         )
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         self.assertEqual(Review.objects.count(), 1)
+
+    def test_invalid_email_rejected(self):
+        self.client.force_authenticate(self.user)
+        resp = self.client.post(
+            f"/api/product/{self.product.id}/reviews/",
+            {"author": "A", "email": "not-an-email", "text": "ok", "rate": 5},
+            format="json",
+        )
+        self.assertEqual(resp.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("email", resp.json())
+        self.assertEqual(Review.objects.count(), 0)
+
+    def test_rate_out_of_range_rejected(self):
+        self.client.force_authenticate(self.user)
+        resp = self.client.post(
+            f"/api/product/{self.product.id}/reviews/",
+            {"author": "A", "email": "a@a.ru", "text": "ok", "rate": 7},
+            format="json",
+        )
+        self.assertEqual(resp.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(Review.objects.count(), 0)
+
+    def test_empty_text_rejected(self):
+        self.client.force_authenticate(self.user)
+        resp = self.client.post(
+            f"/api/product/{self.product.id}/reviews/",
+            {"author": "A", "email": "a@a.ru", "text": "", "rate": 5},
+            format="json",
+        )
+        self.assertEqual(resp.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(Review.objects.count(), 0)
+
+
+class SignUpTests(APITestCase):
+    def test_two_users_without_email(self):
+        resp1 = self.client.post(
+            "/api/sign-up/",
+            {"name": "A", "username": "user_a", "password": "123456"},
+            format="json",
+        )
+        self.assertEqual(resp1.status_code, status.HTTP_200_OK)
+        self.client.post("/api/sign-out/")
+        resp2 = self.client.post(
+            "/api/sign-up/",
+            {"name": "B", "username": "user_b", "password": "123456"},
+            format="json",
+        )
+        self.assertEqual(resp2.status_code, status.HTTP_200_OK)
+        self.assertEqual(
+            User.objects.filter(username__in=["user_a", "user_b"]).count(), 2
+        )
+        self.assertIsNone(User.objects.get(username="user_a").email)
+
+    def test_duplicate_username_returns_error(self):
+        User.objects.create_user(username="taken", password="123456", email="t@t.ru")
+        resp = self.client.post(
+            "/api/sign-up/",
+            {"name": "X", "username": "taken", "password": "123456"},
+            format="json",
+        )
+        self.assertEqual(resp.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("error", resp.json())
+
+    def test_missing_credentials_returns_error(self):
+        resp = self.client.post(
+            "/api/sign-up/", {"name": "X", "username": "", "password": ""},
+            format="json",
+        )
+        self.assertEqual(resp.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("error", resp.json())

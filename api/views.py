@@ -1,6 +1,7 @@
 import json
 
 from django.contrib.auth import authenticate, login, logout
+from django.db import IntegrityError
 from django.db.models import Avg, Count, Q
 from django.shortcuts import get_object_or_404
 from rest_framework import status
@@ -10,7 +11,7 @@ from rest_framework.views import APIView
 
 from accounts.models import User
 from cart.services import CartService
-from catalog.models import Category, Product, Review, Sale, Tag
+from catalog.models import Category, Product, Sale, Tag
 from orders.models import Order, OrderItem
 from payments.models import Payment
 from payments.tasks import process_payment
@@ -58,19 +59,35 @@ class SignUpView(APIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        payload = json.loads(request.body or "{}")
-        username = payload.get("username")
-        password = payload.get("password")
-        name = payload.get("name", "")
-        if not username or not password:
-            return Response(status=status.HTTP_400_BAD_REQUEST)
-        if User.objects.filter(username=username).exists():
+        try:
+            payload = json.loads(request.body or "{}")
+        except json.JSONDecodeError:
             return Response(
-                {"error": "username exists"}, status=status.HTTP_400_BAD_REQUEST
+                {"error": "Некорректный формат запроса"},
+                status=status.HTTP_400_BAD_REQUEST,
             )
-        user = User.objects.create_user(
-            username=username, password=password, full_name=name
-        )
+        username = (payload.get("username") or "").strip()
+        password = payload.get("password") or ""
+        name = payload.get("name") or ""
+        if not username or not password:
+            return Response(
+                {"error": "Логин и пароль обязательны"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        if User.all_objects.filter(username=username).exists():
+            return Response(
+                {"error": "Пользователь с таким логином уже существует"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        try:
+            User.objects.create_user(
+                username=username, password=password, full_name=name
+            )
+        except IntegrityError:
+            return Response(
+                {"error": "Не удалось создать пользователя, попробуйте другой логин"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
         user = authenticate(request, username=username, password=password)
         login(request, user)
         CartService(request).merge_session_into_user()
@@ -236,13 +253,10 @@ class ProductReviewView(APIView):
 
     def post(self, request, pk):
         product = get_object_or_404(Product, pk=pk)
-        Review.objects.create(
-            product=product,
-            author=request.data.get("author", ""),
-            email=request.data.get("email", ""),
-            text=request.data.get("text", ""),
-            rate=request.data.get("rate", 5),
-        )
+        serializer = ReviewSerializer(data=request.data)
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        serializer.save(product=product)
         reviews = product.reviews.all()
         return Response(ReviewSerializer(reviews, many=True).data)
 

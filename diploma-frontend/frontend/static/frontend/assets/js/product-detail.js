@@ -39,8 +39,18 @@ var mix = {
                 this.review.email = ''
                 this.review.text = ''
                 this.review.rate = 5
-            }).catch(() => {
-                console.warn('Ошибка при публикации отзыва')
+            }).catch((error) => {
+                const status = error?.response?.status
+                const data = error?.response?.data
+                let message = 'Ошибка при публикации отзыва'
+                if (status === 403) {
+                    message = 'Чтобы оставить отзыв, войдите в аккаунт'
+                } else if (status === 400 && data && typeof data === 'object') {
+                    message = Object.entries(data)
+                        .map(([field, errors]) => field + ': ' + [].concat(errors).join(' '))
+                        .join('\n')
+                }
+                alert(message)
             })
         },
         setActivePhoto(index) {

@@ -20,7 +20,7 @@ def avatar_upload_to(instance, filename):
 
 
 class User(AbstractUser):
-    email = models.EmailField("email address", unique=True)
+    email = models.EmailField("email address", unique=True, null=True, blank=True)
     phone = models.CharField(max_length=20, unique=True, null=True, blank=True)
     full_name = models.CharField(max_length=255, blank=True)
     avatar = models.ImageField(upload_to=avatar_upload_to, null=True, blank=True)
@@ -30,6 +30,10 @@ class User(AbstractUser):
 
     objects = CustomUserManager()
     all_objects = AllUsersManager()
+
+    def save(self, *args, **kwargs):
+        self.email = self.email or None
+        super().save(*args, **kwargs)
 
     def delete(self, using=None, keep_parents=False):
         self.is_deleted = True
